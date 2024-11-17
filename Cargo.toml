@@ -1,0 +1,8 @@
+[package]
+name = "cokoala"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+web-sys = { version = "0.3", features = ["Window", "Document"] }
+leptos = { version = "0.7.0-rc1", features = ["csr", "nightly"] }
