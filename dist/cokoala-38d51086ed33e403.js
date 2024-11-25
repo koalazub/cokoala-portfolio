@@ -202,7 +202,7 @@ function handleError(f, args) {
 }
 
 function notDefined(what) { return () => { throw new Error(`${what} is not defined`); }; }
-function __wbg_adapter_93(arg0, arg1, arg2, arg3) {
+function __wbg_adapter_95(arg0, arg1, arg2, arg3) {
     wasm.closure92_externref_shim(arg0, arg1, arg2, arg3);
 }
 
@@ -454,6 +454,9 @@ function __wbg_get_imports() {
     imports.wbg.__wbg_setinnerHTML_559d45055154f1d8 = function(arg0, arg1, arg2) {
         arg0.innerHTML = getStringFromWasm0(arg1, arg2);
     };
+    imports.wbg.__wbg_setAttribute_2a8f647a8d92c712 = function() { return handleError(function (arg0, arg1, arg2, arg3, arg4) {
+        arg0.setAttribute(getStringFromWasm0(arg1, arg2), getStringFromWasm0(arg3, arg4));
+    }, arguments) };
     imports.wbg.__wbg_cloneNode_0afaf6c6ce3a8ad2 = function() { return handleError(function (arg0, arg1) {
         const ret = arg0.cloneNode(arg1 !== 0);
         return ret;
@@ -524,7 +527,7 @@ function __wbg_get_imports() {
                 const a = state0.a;
                 state0.a = 0;
                 try {
-                    return __wbg_adapter_93(a, state0.b, arg0, arg1);
+                    return __wbg_adapter_95(a, state0.b, arg0, arg1);
                 } finally {
                     state0.a = a;
                 }
@@ -600,7 +603,7 @@ function __wbg_get_imports() {
         const ret = wasm.memory;
         return ret;
     };
-    imports.wbg.__wbindgen_closure_wrapper5047 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper5060 = function(arg0, arg1, arg2) {
         const ret = makeMutClosure(arg0, arg1, 87, __wbg_adapter_22);
         return ret;
     };

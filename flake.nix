@@ -34,12 +34,15 @@
         devShells.default = pkgs.mkShell {
           buildInputs = with pkgs; [
             binaryen
+            broot
             git
             cargo-leptos
             leptosfmt
             openssl
             pkg-config
             rustToolchain
+            tailwindcss
+            tailwindcss-language-server
             trunk
             wasm-bindgen-cli
             spin
