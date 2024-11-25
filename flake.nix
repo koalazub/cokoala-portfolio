@@ -35,12 +35,14 @@
           buildInputs = with pkgs; [
             binaryen
             git
+            cargo-leptos
             leptosfmt
             openssl
             pkg-config
             rustToolchain
             trunk
             wasm-bindgen-cli
+            spin
           ];
 
           shellHook = ''

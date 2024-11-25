@@ -1,0 +1,13 @@
+spin_manifest_version = "1"
+authors = ["Your Name <your.email@example.com>"]
+name = "portfolio"
+trigger = { type = "http" }
+version = "0.1.0"
+
+[[component]]
+id = "portfolio"
+source = "target/wasm32-unknown-unknown/release/portfolio.wasm"
+[component.trigger]
+route = "/..."
+[component.build]
+command = "cargo build --target wasm32-unknown-unknown --release"
