@@ -45,7 +45,6 @@
             tailwindcss-language-server
             trunk
             wasm-bindgen-cli
-            spin
           ];
 
           shellHook = ''
