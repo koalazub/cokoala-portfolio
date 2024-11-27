@@ -27,15 +27,12 @@ trunk serve
 - Hot reloading during development
 
 ## Deployment
-Deployments are handled through Fermyon Cloud:
-```bash
-spin deploy
-```
+
+iunno tbd 
 
 ## Prerequisites
 - Nix package manager with flakes enabled
 - Rust toolchain (automatically managed via Nix)
-- Fermyon Spin CLI (included in development shell)
 
 ## License
 MIT

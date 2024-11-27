@@ -3,6 +3,7 @@ name = "cokoala"
 version = "0.1.0"
 edition = "2021"
 
+
 [dependencies]
 leptos = { version = "0.7.0-rc1", features = ["csr", "nightly"] }
 web-sys = { version = "0.3", features = ["Window", "Document"] }
