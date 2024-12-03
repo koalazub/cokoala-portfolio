@@ -3,5 +3,8 @@ use leptos::*;
 /// 404 Not Found Page
 #[component]
 pub fn NotFound() -> impl IntoView {
-    view! { <h1>"Uh oh!" <br/> "We couldn't find that page!"</h1>  }
+    view! {
+        <h1>"Are you dumb?"</h1>
+        <p>"There are 3 buttons on the home page. How did you fuck this up?"</p>
+    }
 }

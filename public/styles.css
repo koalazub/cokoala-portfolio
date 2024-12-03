@@ -1,4 +1,8 @@
-/* --------------------- Open Props --------------------------- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* /* --------------------- Open Props --------------------------- */
 
 /* the props */
 @import "https://unpkg.com/open-props";
@@ -42,7 +46,7 @@ button {
   margin: var(--size-6);
 }
 
-body > picture,
+body>picture,
 button {
   display: block;
   margin-left: auto;

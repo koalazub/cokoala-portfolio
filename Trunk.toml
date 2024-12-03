@@ -1,0 +1,11 @@
+[build]
+target = "index.html"
+release = true
+
+[watch]
+dir = "src/"
+
+[tailwind]
+input = "./tailwind.css"
+output = "./dist/tailwind.css"
+output_format = "link"

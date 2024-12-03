@@ -1,1 +1,2 @@
-pub mod counter_btn;
+pub mod menu_butts;
+pub mod navbar;
