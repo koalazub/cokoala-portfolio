@@ -1,3 +1,10 @@
+# TLDR:
+
+If you just want to launch it locally and check it out, run this: 
+```nu
+trunk serve --port 3000 --open
+```
+
 <picture>
     <source srcset="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_Solid_White.svg" media="(prefers-color-scheme: dark)">
     <img src="https://raw.githubusercontent.com/leptos-rs/leptos/main/docs/logos/Leptos_logo_RGB.svg" alt="Leptos Logo">

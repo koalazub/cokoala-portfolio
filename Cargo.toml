@@ -7,22 +7,27 @@ authors = ["koalazub <7111524+koalazub@users.noreply.github.com>"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-leptos = { version = "0.6", features = ["csr", "nightly"] }
-leptos_meta = { version = "0.6", features = ["csr", "nightly"] }
-leptos_router = { version = "0.6", features = ["csr", "nightly"] }
+leptos = { version = "0.7", features = ["csr", "nightly"] }
+leptos_meta = { version = "0.7" }
+leptos_router = { version = "0.7", features = ["nightly"] }
 console_log = "1"
 log = "0.4"
 console_error_panic_hook = "0.1"
-
+wgpu = { version = "23.0", features = ["webgpu"] }
+web-sys = { version = "0.3", features = [
+  "HtmlCanvasElement",
+  "console",
+  "Window",
+  "Document",
+] }
 # utils
-# strum = { version = "0.25", features = ["derive", "strum_macros"] }
-# strum_macros = "0.25"
+strum = { version = "0.26", features = ["derive", "strum_macros"] }
+strum_macros = "0.26"
 
 
 [dev-dependencies]
 wasm-bindgen = "0.2"
 wasm-bindgen-test = "0.3"
-web-sys = { version = "0.3", features = ["Document", "Window"] }
 
 
 [profile.release]

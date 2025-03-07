@@ -24,11 +24,6 @@ pub fn NavBar() -> impl IntoView {
                             route="/about"
                             class=nav_styling
                         />
-                        <Button
-                            text="Blog"
-                            route="/blog"
-                            class=nav_styling
-                        />
                 </div>
             </div>
         </nav>
